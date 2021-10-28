@@ -1,5 +1,6 @@
 import React from "react"
-import { View } from "react-native"
+import { Text, View } from "react-native"
+import MyButton from "../assets/MyButton"
 import Icons from "../assets/Icons"
 
 const Header = () => {
@@ -7,12 +8,40 @@ const Header = () => {
       <View
          style={{
             flex: 1,
-            backgroundColor: "#64abe5",
+            paddingTop: 20,
+            marginBottom: 0,
+            backgroundColor: "#673ab7",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            flexDirection: "row"
          }}
       >
-         <Icons name="menu" size="medium" />
+         <View
+            style={{
+               flex: 1,
+               alignItems: "center",
+               justifyContent: "center"
+            }}
+         >
+            <MyButton icon name="menu" />
+         </View>
+
+         <View
+            style={{
+               flex: 5,
+               alignItems: "center",
+               justifyContent: "center"
+            }}
+         >
+            <Text
+               style={{
+                  fontSize: 30,
+                  color: "#d1c4e9"
+               }}
+            >
+               Assistant
+            </Text>
+         </View>
       </View>
    )
 }

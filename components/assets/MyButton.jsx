@@ -2,15 +2,15 @@ import React from "react"
 import { Button, TextPropTypes, TouchableOpacity } from "react-native"
 import Icons from "./Icons"
 
-const Button = props => {
+const MyButton = props => {
    if (props.icon) {
       return (
          <TouchableOpacity
             onPress={() => {
-               alert(test)
+               console.log("non")
             }}
          >
-            <Icons name={props.name} size="small " />
+            <Icons name={props.name} size="medium" />
          </TouchableOpacity>
       )
    } else {
@@ -18,4 +18,4 @@ const Button = props => {
    }
 }
 
-export default Button
+export default MyButton
